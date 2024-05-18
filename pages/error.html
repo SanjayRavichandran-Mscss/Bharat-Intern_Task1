@@ -8,6 +8,7 @@
       href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
       type="image/x-icon"
     />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Error</title>
   </head>
@@ -16,10 +17,11 @@
     <style>
       /* Apply glassmorphism effect to the container */
       .container {
-        background: rgba(255, 255, 255, 0.655); /* Set a semi-transparent white background */
+        background:white; /* Set a semi-transparent white background */
         backdrop-filter: blur(10px); /* Apply a blur effect to the background */
         border-radius:15px; /* Rounded corners */
         padding: 30px;
+        color:red;
         text-align: center;
       }
 
@@ -29,12 +31,29 @@
         justify-content: center;
         align-items: center;
         height: 100vh; /* Ensure full viewport height */
-        background-color: rgb(188, 188, 188);
+        background-color: red;
       }
+      .blinking-text {
+    animation: blink-animation 1s infinite; /* Apply the blink-animation with infinite repetition */
+}
+
+      @keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
     </style>
-    <div class="container">
-      <h1>Registration Error</h1>
+    <div  class="container">
+      <h1 class="blinking-text">Registration Error</h1>
       <p>There was an error during registration. Please try again.</p>
+      
     </div>
   </body>
 </html>

@@ -53,7 +53,6 @@ app.post("/register", async(req, res) =>{
        res.redirect("/success");
     }
     else{
-        console.log("User Already exist")
         res.redirect("/error")
     }
     }
